@@ -1,10 +1,12 @@
-TestCaseTest.java
- TestCaseTest
-WasRun.java
- WasRun
 TestResult.java
  TestResult
+WasRun.java
+ WasRun
 TestCase.java
  TestCase
+TestSuite.java
+ TestSuite
+TestCaseTest.java
+ TestCaseTest
 Main.java
  Main

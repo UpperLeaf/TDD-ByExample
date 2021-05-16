@@ -14,8 +14,7 @@ public class TestCase {
     public void tearDown() {
     }
 
-    public TestResult run() throws Exception {
-        TestResult result = new TestResult();
+    public TestResult run(TestResult result) {
         result.testStarted();
         setUp();
         try {
