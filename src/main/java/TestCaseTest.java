@@ -1,14 +1,14 @@
 public class TestCaseTest extends TestCase {
 
+    private WasRun test;
+
     public TestCaseTest(String name) {
         super(name);
     }
 
-    public void testRunning() throws Exception {
-        WasRun wasRun = new WasRun("testMethod");
-        assert !wasRun.wasRun;
-        wasRun.run();
-        assert wasRun.wasRun;
+    public void testTemplateMethod() throws Exception{
+        test = new WasRun("testMethod");
+        test.run();
+        assert "setUp testMethod " == test.log;
     }
-
 }
