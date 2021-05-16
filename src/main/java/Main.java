@@ -1,9 +1,7 @@
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        WasRun test = new WasRun("testMethod");
-        System.out.println(test.wasRun);
+        TestCaseTest test = new TestCaseTest("testRunning");
         test.run();
-        System.out.println(test.wasRun);
     }
 }
