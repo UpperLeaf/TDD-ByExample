@@ -14,10 +14,17 @@ public class TestCase {
     public void tearDown() {
     }
 
-    public void run() throws Exception {
+    public TestResult run() throws Exception {
+        TestResult result = new TestResult();
+        result.testStarted();
         setUp();
-        Method method = getClass().getMethod(name);
-        method.invoke(this);
+        try {
+            Method method = getClass().getMethod(name);
+            method.invoke(this);
+        }catch (Exception e){
+            result.testFailed();
+        }
         tearDown();
+        return result;
     }
 }
