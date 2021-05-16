@@ -1,15 +1,6 @@
 public class Main {
 
-    public static void main(String[] args) throws Exception {
-//        TestCaseTest test1 = new TestCaseTest("testTemplateMethod");
-//        test1.run();
-//
-//        TestCaseTest test2 = new TestCaseTest("testFailedResult");
-//        test2.run();
-//
-//        TestCaseTest test3 = new TestCaseTest("testFailedResultFormatting");
-//        test3.run();
-
+    public static void main(String[] args) {
         TestSuite testSuite = new TestSuite();
         testSuite.add(new TestCaseTest("testTemplateMethod"));
         testSuite.add(new TestCaseTest("testFailedResult"));
