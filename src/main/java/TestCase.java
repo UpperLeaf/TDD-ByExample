@@ -11,9 +11,13 @@ public class TestCase {
     public void setUp() {
     }
 
+    public void tearDown() {
+    }
+
     public void run() throws Exception {
         setUp();
         Method method = getClass().getMethod(name);
         method.invoke(this);
+        tearDown();
     }
 }

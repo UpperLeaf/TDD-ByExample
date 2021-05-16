@@ -6,9 +6,9 @@ public class TestCaseTest extends TestCase {
         super(name);
     }
 
-    public void testTemplateMethod() throws Exception{
+    public void testTemplateMethod() throws Exception {
         test = new WasRun("testMethod");
         test.run();
-        assert "setUp testMethod " == test.log;
+        assert "setUp testMethod tearDown ".equals(test.log);
     }
 }
